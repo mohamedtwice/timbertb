@@ -1,0 +1,62 @@
+
+{# No specific markup for the home page, yet. Add it here inside a content block! #}
+
+{% extends "page.twig" %}
+
+{% block content %}
+
+<div class="hero" style="background: url({{TimberImage(post.hero_image).src}});background-size: cover;background-position-x: center;background-position-y: center;">
+
+<div class="wrapper">
+  <h3></h3>
+</div>
+
+</div>
+
+<div class="home-intro">
+<div class="wrapper">
+  <h3>{{post.home_intro_title}}</h3>
+<p>{{post.home_intro_text}}</p>
+<a class="button large" href="{{home_button1_url}}">{{ home_button1_text }}</a>
+</div>
+</div>
+
+
+<!-- <div class="home-intro">
+<div class="wrapper">
+
+</div>
+</div> -->
+
+
+<div class="home-boxes">
+<div class="container">
+  <div class="box box-1" style="background: url({{TimberImage(post.home_box_image1).src}});background-size: cover;background-position-x: center;background-position-y: center;">1</div>
+  <div class="box box-2">
+    <div class="homebox-right">
+  <h2 class="homebox-right-h2">{{ post.home_box_title }}</h2>
+  <p class="homebox-right-p">{{ post.home_box_text }}</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="home-intro">
+<div class="wrapper">
+  <h3>{{post.home_intro_title}}</h3>
+<p>{{post.home_intro_text}}</p>
+<a class="btn-default" href="{{home_button1_url}}" style="width:100px;">{{ home_button1_text }}</a>
+</div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<div class="wrapper">
+
+
+ <h2> FOOTER</h2>
+
+
+</div>
+{% endblock %}

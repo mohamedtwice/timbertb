@@ -1,0 +1,57 @@
+// ---
+// Site Styles
+// ---
+
+.hero {
+	background: black;
+	height: 40em;
+	padding: 30px 0;
+	color: #f5f6f7;
+}
+
+.home-intro {
+	padding: 40px 0 60px;
+	background: #f5f6f7;
+}
+
+.box {
+	width: 100px;
+	font-size: 100px;
+	color: white;
+	text-align: center;
+	box-sizing: border-box;
+	flex-basis: 200px;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	border: 0px solid black;
+}
+
+box-1 box-2 {
+}
+
+.box-1 {
+	flex-grow: 1;
+	background: red;
+	height: 500px;
+}
+
+.box-2 {
+	flex-grow: 1;
+	background: blue;
+}
+
+.homebox-right {
+	width: 70%;
+	margin: 10px auto;
+}
+
+.homebox-right-h2 {
+	text-align: left;
+}
+
+.homebox-right-p {
+	text-align: left;
+}
